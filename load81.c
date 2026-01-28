@@ -26,9 +26,14 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
-#include <sys/time.h>
 #include <errno.h>
 #include <ctype.h>
+
+#ifdef _WIN32
+#include <winsock.h>
+#else
+#include <sys/time.h>
+#endif
 
 #include <lua.h>
 #include <lauxlib.h>

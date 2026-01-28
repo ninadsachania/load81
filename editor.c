@@ -1,6 +1,5 @@
 #include "editor.h"
 #include <time.h>
-#include <unistd.h>
 
 static struct editorConfig E;
 
