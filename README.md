@@ -33,6 +33,15 @@ The name Load81 originates from the fact that in popular Commodore home
 computers the command `LOAD "*",8,1` would load the first program on the disk
 starting from the file-specified memory location.
 
+BUILD
+===
+
+On Windows:
+
+```
+.\build.bat
+```
+
 USAGE
 ===
 
