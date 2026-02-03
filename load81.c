@@ -28,6 +28,7 @@
 #include <time.h>
 #include <errno.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 #ifdef _WIN32
 #include <winsock.h>
@@ -549,7 +550,7 @@ int main(int argc, char **argv) {
     initScreen();
     initEditor(l81.fb,30,30,30,30);
     editorOpen(l81.filename);
-    while(1) {
+    while(true) {
         resetProgram();
         loadProgram();
         if (!l81.luaerr) {
