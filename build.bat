@@ -5,7 +5,7 @@ if not exist build mkdir build || exit /b 1
 
 pushd build || exit /b 1
 
-cl /nologo /TC /Zi /Fe:load81.exe ..\main.c ^
+cl /nologo /TC /Zi /W4 /Fe:load81.exe ..\main.c ^
   /I..^
   /I..\libs\SDL2\include ^
   /I..\libs\SDL2_gfx\include ^
