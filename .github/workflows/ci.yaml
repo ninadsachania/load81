@@ -18,3 +18,7 @@ jobs:
         run: |
           call "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Auxiliary\\Build\\vcvars64.bat" x64
           call build.bat
+
+      - name: List files
+        shell: cmd
+        run: dir
